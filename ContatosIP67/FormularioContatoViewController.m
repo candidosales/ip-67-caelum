@@ -17,12 +17,13 @@
 - (id) initWithCoder:(NSCoder *)aDecoder {
     self = [super initWithCoder:aDecoder];
     if (self) {
-        self.dao = [ContatoDao new];
+        
         self.navigationItem.title = @"Cadastro";
         UIBarButtonItem *adiciona = [[UIBarButtonItem alloc]
                                      initWithTitle:@"Adiciona" style:UIBarButtonItemStylePlain target:self action:@selector(criaContato)];
         self.navigationItem.rightBarButtonItem = adiciona;
         
+        self.dao = [ContatoDao contatoDaoInstance];
     }
     return self;
 }

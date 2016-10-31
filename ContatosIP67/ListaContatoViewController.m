@@ -17,7 +17,12 @@
         
         UIBarButtonItem *botaoExibirFormulario = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(exibeFormulario)];
         
+        UITableViewCell *cell = [[UITableViewCell alloc]
+                                 initWithStyle:UITableViewCellStyleDefault reuseIdentifier:nil];
+        
         self.navigationItem.rightBarButtonItem = botaoExibirFormulario;
+        
+        self.dao = [ContatoDao contatoDaoInstance];
     }
     return self;
 }
@@ -26,6 +31,22 @@
     UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
     FormularioContatoViewController *form = [storyboard instantiateViewControllerWithIdentifier:@"Form-Contato"];
     [self.navigationController pushViewController:form animated:YES];
+}
+
+- (NSInteger) tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+    return [self.dao.contatos count];
+}
+
+- (NSInteger) numberOfSectionsInTableView:(UITableView *)tableView {
+    return 1;
+}
+
+- (UITableViewCell *) tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    Contato *contato = [self.dao buscaContatoDaPosicao:indexPath.row];
+    UITableViewCell *cell = [[UITableViewCell alloc]
+                             initWithStyle:UITableViewCellStyleDefault reuseIdentifier:nil];
+    cell.textLabel.text = contato.nome;
+    return cell;
 }
 
 @end
