@@ -1,0 +1,536 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		319C1F9B1DC767CF0013B5D4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 319C1F9A1DC767CF0013B5D4 /* main.m */; };
+		319C1F9E1DC767CF0013B5D4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 319C1F9D1DC767CF0013B5D4 /* AppDelegate.m */; };
+		319C1FA11DC767CF0013B5D4 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 319C1FA01DC767CF0013B5D4 /* ViewController.m */; };
+		319C1FA41DC767CF0013B5D4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 319C1FA21DC767CF0013B5D4 /* Main.storyboard */; };
+		319C1FA71DC767CF0013B5D4 /* ContatosIP67.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 319C1FA51DC767CF0013B5D4 /* ContatosIP67.xcdatamodeld */; };
+		319C1FA91DC767CF0013B5D4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 319C1FA81DC767CF0013B5D4 /* Assets.xcassets */; };
+		319C1FAC1DC767CF0013B5D4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 319C1FAA1DC767CF0013B5D4 /* LaunchScreen.storyboard */; };
+		319C1FB71DC767CF0013B5D4 /* ContatosIP67Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 319C1FB61DC767CF0013B5D4 /* ContatosIP67Tests.m */; };
+		319C1FC21DC767CF0013B5D4 /* ContatosIP67UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 319C1FC11DC767CF0013B5D4 /* ContatosIP67UITests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		319C1FB31DC767CF0013B5D4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 319C1F8E1DC767CF0013B5D4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 319C1F951DC767CF0013B5D4;
+			remoteInfo = ContatosIP67;
+		};
+		319C1FBE1DC767CF0013B5D4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 319C1F8E1DC767CF0013B5D4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 319C1F951DC767CF0013B5D4;
+			remoteInfo = ContatosIP67;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		319C1F961DC767CF0013B5D4 /* ContatosIP67.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ContatosIP67.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		319C1F9A1DC767CF0013B5D4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		319C1F9C1DC767CF0013B5D4 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		319C1F9D1DC767CF0013B5D4 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		319C1F9F1DC767CF0013B5D4 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		319C1FA01DC767CF0013B5D4 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		319C1FA31DC767CF0013B5D4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		319C1FA61DC767CF0013B5D4 /* ContatosIP67.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ContatosIP67.xcdatamodel; sourceTree = "<group>"; };
+		319C1FA81DC767CF0013B5D4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		319C1FAB1DC767CF0013B5D4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		319C1FAD1DC767CF0013B5D4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		319C1FB21DC767CF0013B5D4 /* ContatosIP67Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ContatosIP67Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		319C1FB61DC767CF0013B5D4 /* ContatosIP67Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ContatosIP67Tests.m; sourceTree = "<group>"; };
+		319C1FB81DC767CF0013B5D4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		319C1FBD1DC767CF0013B5D4 /* ContatosIP67UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ContatosIP67UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		319C1FC11DC767CF0013B5D4 /* ContatosIP67UITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ContatosIP67UITests.m; sourceTree = "<group>"; };
+		319C1FC31DC767CF0013B5D4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		319C1F931DC767CF0013B5D4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		319C1FAF1DC767CF0013B5D4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		319C1FBA1DC767CF0013B5D4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		319C1F8D1DC767CF0013B5D4 = {
+			isa = PBXGroup;
+			children = (
+				319C1F981DC767CF0013B5D4 /* ContatosIP67 */,
+				319C1FB51DC767CF0013B5D4 /* ContatosIP67Tests */,
+				319C1FC01DC767CF0013B5D4 /* ContatosIP67UITests */,
+				319C1F971DC767CF0013B5D4 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		319C1F971DC767CF0013B5D4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				319C1F961DC767CF0013B5D4 /* ContatosIP67.app */,
+				319C1FB21DC767CF0013B5D4 /* ContatosIP67Tests.xctest */,
+				319C1FBD1DC767CF0013B5D4 /* ContatosIP67UITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		319C1F981DC767CF0013B5D4 /* ContatosIP67 */ = {
+			isa = PBXGroup;
+			children = (
+				319C1F9C1DC767CF0013B5D4 /* AppDelegate.h */,
+				319C1F9D1DC767CF0013B5D4 /* AppDelegate.m */,
+				319C1F9F1DC767CF0013B5D4 /* ViewController.h */,
+				319C1FA01DC767CF0013B5D4 /* ViewController.m */,
+				319C1FA21DC767CF0013B5D4 /* Main.storyboard */,
+				319C1FA81DC767CF0013B5D4 /* Assets.xcassets */,
+				319C1FAA1DC767CF0013B5D4 /* LaunchScreen.storyboard */,
+				319C1FAD1DC767CF0013B5D4 /* Info.plist */,
+				319C1FA51DC767CF0013B5D4 /* ContatosIP67.xcdatamodeld */,
+				319C1F991DC767CF0013B5D4 /* Supporting Files */,
+			);
+			path = ContatosIP67;
+			sourceTree = "<group>";
+		};
+		319C1F991DC767CF0013B5D4 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				319C1F9A1DC767CF0013B5D4 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		319C1FB51DC767CF0013B5D4 /* ContatosIP67Tests */ = {
+			isa = PBXGroup;
+			children = (
+				319C1FB61DC767CF0013B5D4 /* ContatosIP67Tests.m */,
+				319C1FB81DC767CF0013B5D4 /* Info.plist */,
+			);
+			path = ContatosIP67Tests;
+			sourceTree = "<group>";
+		};
+		319C1FC01DC767CF0013B5D4 /* ContatosIP67UITests */ = {
+			isa = PBXGroup;
+			children = (
+				319C1FC11DC767CF0013B5D4 /* ContatosIP67UITests.m */,
+				319C1FC31DC767CF0013B5D4 /* Info.plist */,
+			);
+			path = ContatosIP67UITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		319C1F951DC767CF0013B5D4 /* ContatosIP67 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 319C1FC61DC767CF0013B5D4 /* Build configuration list for PBXNativeTarget "ContatosIP67" */;
+			buildPhases = (
+				319C1F921DC767CF0013B5D4 /* Sources */,
+				319C1F931DC767CF0013B5D4 /* Frameworks */,
+				319C1F941DC767CF0013B5D4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ContatosIP67;
+			productName = ContatosIP67;
+			productReference = 319C1F961DC767CF0013B5D4 /* ContatosIP67.app */;
+			productType = "com.apple.product-type.application";
+		};
+		319C1FB11DC767CF0013B5D4 /* ContatosIP67Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 319C1FC91DC767CF0013B5D4 /* Build configuration list for PBXNativeTarget "ContatosIP67Tests" */;
+			buildPhases = (
+				319C1FAE1DC767CF0013B5D4 /* Sources */,
+				319C1FAF1DC767CF0013B5D4 /* Frameworks */,
+				319C1FB01DC767CF0013B5D4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				319C1FB41DC767CF0013B5D4 /* PBXTargetDependency */,
+			);
+			name = ContatosIP67Tests;
+			productName = ContatosIP67Tests;
+			productReference = 319C1FB21DC767CF0013B5D4 /* ContatosIP67Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		319C1FBC1DC767CF0013B5D4 /* ContatosIP67UITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 319C1FCC1DC767CF0013B5D4 /* Build configuration list for PBXNativeTarget "ContatosIP67UITests" */;
+			buildPhases = (
+				319C1FB91DC767CF0013B5D4 /* Sources */,
+				319C1FBA1DC767CF0013B5D4 /* Frameworks */,
+				319C1FBB1DC767CF0013B5D4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				319C1FBF1DC767CF0013B5D4 /* PBXTargetDependency */,
+			);
+			name = ContatosIP67UITests;
+			productName = ContatosIP67UITests;
+			productReference = 319C1FBD1DC767CF0013B5D4 /* ContatosIP67UITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		319C1F8E1DC767CF0013B5D4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = Caelum;
+				TargetAttributes = {
+					319C1F951DC767CF0013B5D4 = {
+						CreatedOnToolsVersion = 7.2;
+					};
+					319C1FB11DC767CF0013B5D4 = {
+						CreatedOnToolsVersion = 7.2;
+						TestTargetID = 319C1F951DC767CF0013B5D4;
+					};
+					319C1FBC1DC767CF0013B5D4 = {
+						CreatedOnToolsVersion = 7.2;
+						TestTargetID = 319C1F951DC767CF0013B5D4;
+					};
+				};
+			};
+			buildConfigurationList = 319C1F911DC767CF0013B5D4 /* Build configuration list for PBXProject "ContatosIP67" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 319C1F8D1DC767CF0013B5D4;
+			productRefGroup = 319C1F971DC767CF0013B5D4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				319C1F951DC767CF0013B5D4 /* ContatosIP67 */,
+				319C1FB11DC767CF0013B5D4 /* ContatosIP67Tests */,
+				319C1FBC1DC767CF0013B5D4 /* ContatosIP67UITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		319C1F941DC767CF0013B5D4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				319C1FAC1DC767CF0013B5D4 /* LaunchScreen.storyboard in Resources */,
+				319C1FA91DC767CF0013B5D4 /* Assets.xcassets in Resources */,
+				319C1FA41DC767CF0013B5D4 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		319C1FB01DC767CF0013B5D4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		319C1FBB1DC767CF0013B5D4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		319C1F921DC767CF0013B5D4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				319C1FA11DC767CF0013B5D4 /* ViewController.m in Sources */,
+				319C1F9E1DC767CF0013B5D4 /* AppDelegate.m in Sources */,
+				319C1FA71DC767CF0013B5D4 /* ContatosIP67.xcdatamodeld in Sources */,
+				319C1F9B1DC767CF0013B5D4 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		319C1FAE1DC767CF0013B5D4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				319C1FB71DC767CF0013B5D4 /* ContatosIP67Tests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		319C1FB91DC767CF0013B5D4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				319C1FC21DC767CF0013B5D4 /* ContatosIP67UITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		319C1FB41DC767CF0013B5D4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 319C1F951DC767CF0013B5D4 /* ContatosIP67 */;
+			targetProxy = 319C1FB31DC767CF0013B5D4 /* PBXContainerItemProxy */;
+		};
+		319C1FBF1DC767CF0013B5D4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 319C1F951DC767CF0013B5D4 /* ContatosIP67 */;
+			targetProxy = 319C1FBE1DC767CF0013B5D4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		319C1FA21DC767CF0013B5D4 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				319C1FA31DC767CF0013B5D4 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		319C1FAA1DC767CF0013B5D4 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				319C1FAB1DC767CF0013B5D4 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		319C1FC41DC767CF0013B5D4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		319C1FC51DC767CF0013B5D4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		319C1FC71DC767CF0013B5D4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = ContatosIP67/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.caelum.ContatosIP67;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		319C1FC81DC767CF0013B5D4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = ContatosIP67/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.caelum.ContatosIP67;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		319C1FCA1DC767CF0013B5D4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = ContatosIP67Tests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.caelum.ContatosIP67Tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ContatosIP67.app/ContatosIP67";
+			};
+			name = Debug;
+		};
+		319C1FCB1DC767CF0013B5D4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = ContatosIP67Tests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.caelum.ContatosIP67Tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ContatosIP67.app/ContatosIP67";
+			};
+			name = Release;
+		};
+		319C1FCD1DC767CF0013B5D4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = ContatosIP67UITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.caelum.ContatosIP67UITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = ContatosIP67;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		319C1FCE1DC767CF0013B5D4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = ContatosIP67UITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.caelum.ContatosIP67UITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = ContatosIP67;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		319C1F911DC767CF0013B5D4 /* Build configuration list for PBXProject "ContatosIP67" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				319C1FC41DC767CF0013B5D4 /* Debug */,
+				319C1FC51DC767CF0013B5D4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		319C1FC61DC767CF0013B5D4 /* Build configuration list for PBXNativeTarget "ContatosIP67" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				319C1FC71DC767CF0013B5D4 /* Debug */,
+				319C1FC81DC767CF0013B5D4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		319C1FC91DC767CF0013B5D4 /* Build configuration list for PBXNativeTarget "ContatosIP67Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				319C1FCA1DC767CF0013B5D4 /* Debug */,
+				319C1FCB1DC767CF0013B5D4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		319C1FCC1DC767CF0013B5D4 /* Build configuration list for PBXNativeTarget "ContatosIP67UITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				319C1FCD1DC767CF0013B5D4 /* Debug */,
+				319C1FCE1DC767CF0013B5D4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		319C1FA51DC767CF0013B5D4 /* ContatosIP67.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				319C1FA61DC767CF0013B5D4 /* ContatosIP67.xcdatamodel */,
+			);
+			currentVersion = 319C1FA61DC767CF0013B5D4 /* ContatosIP67.xcdatamodel */;
+			path = ContatosIP67.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 319C1F8E1DC767CF0013B5D4 /* Project object */;
+}
