@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "ListaContatoViewController.h"
 
 @interface AppDelegate ()
 
@@ -17,6 +18,14 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    UIScreen *tela = [UIScreen mainScreen];
+    CGRect dimensoesDaTela = [tela bounds];
+    self.window = [[UIWindow alloc] initWithFrame:dimensoesDaTela];
+    
+    ListaContatoViewController *lista = [ListaContatoViewController new];
+    self.window.rootViewController = lista;
+    
+    [self.window makeKeyAndVisible];
     return YES;
 }
 
