@@ -23,7 +23,10 @@
     self.window = [[UIWindow alloc] initWithFrame:dimensoesDaTela];
     
     ListaContatoViewController *lista = [ListaContatoViewController new];
-    self.window.rootViewController = lista;
+    
+    UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:lista];
+    
+    self.window.rootViewController = nav;
     
     [self.window makeKeyAndVisible];
     return YES;

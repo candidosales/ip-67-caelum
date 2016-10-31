@@ -12,13 +12,14 @@
 
 @interface FormularioContatoViewController : UIViewController
 
-@property IBOutlet UITextField *nome;
-@property IBOutlet UITextField *telefone;
-@property IBOutlet UITextField *email;
-@property IBOutlet UITextField *endereco;
-@property IBOutlet UITextField *site;
+@property (weak) IBOutlet UITextField *nome;
+@property (weak) IBOutlet UITextField *telefone;
+@property (weak) IBOutlet UITextField *email;
+@property (weak) IBOutlet UITextField *endereco;
+@property (weak) IBOutlet UITextField *site;
 
 @property (strong) ContatoDao *dao;
+@property (strong) Contato *contato;
 
 - (IBAction) pegaDadosDoFormulario;
 

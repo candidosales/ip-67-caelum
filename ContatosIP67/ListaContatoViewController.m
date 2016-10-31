@@ -7,7 +7,25 @@
 //
 
 #import "ListaContatoViewController.h"
+#import "FormularioContatoViewController.h"
 
 @implementation ListaContatoViewController
+- (id) init {
+    self = [super init];
+    if (self) {
+        self.navigationItem.title = @"Contatos";
+        
+        UIBarButtonItem *botaoExibirFormulario = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(exibeFormulario)];
+        
+        self.navigationItem.rightBarButtonItem = botaoExibirFormulario;
+    }
+    return self;
+}
+
+- (void) exibeFormulario {
+    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+    FormularioContatoViewController *form = [storyboard instantiateViewControllerWithIdentifier:@"Form-Contato"];
+    [self.navigationController pushViewController:form animated:YES];
+}
 
 @end
