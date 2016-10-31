@@ -14,6 +14,14 @@
 
 @implementation FormularioContatoViewController
 
+- (id) initWithCoder:(NSCoder *)aDecoder {
+    self = [super initWithCoder:aDecoder];
+    if (self) {
+        self.dao = [ContatoDao new];
+    }
+    return self;
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
@@ -31,6 +39,8 @@
     contato.email = self.email.text;
     contato.endereco = self.endereco.text;
     contato.site = self.site.text;
+    
+    [self.dao adicionaContato:contato];
     
     NSLog(@"Dados: %@", contato);
 }
