@@ -15,12 +15,13 @@
     if (self) {
         self.navigationItem.title = @"Contatos";
         
-        UIBarButtonItem *botaoExibirFormulario = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(exibeFormulario)];
-        
-        UITableViewCell *cell = [[UITableViewCell alloc]
-                                 initWithStyle:UITableViewCellStyleDefault reuseIdentifier:nil];
+        UIBarButtonItem *botaoExibirFormulario = [[UIBarButtonItem alloc]
+                                                  initWithBarButtonSystemItem:UIBarButtonSystemItemAdd
+                                                  target:self
+                                                  action:@selector(exibeFormulario)];
         
         self.navigationItem.rightBarButtonItem = botaoExibirFormulario;
+        self.navigationItem.leftBarButtonItem = self.editButtonItem;
         
         self.dao = [ContatoDao contatoDaoInstance];
     }
@@ -41,12 +42,34 @@
     return 1;
 }
 
-- (UITableViewCell *) tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+- (UITableViewCell *) tableView:(UITableView *)tableView
+          cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    
+    static NSString *cellIdentifier = @"Cell";
+    
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:cellIdentifier];
+    if (!cell) {
+       cell = [[UITableViewCell alloc]
+               initWithStyle:UITableViewCellStyleDefault
+               reuseIdentifier:cellIdentifier];
+    }
+    
     Contato *contato = [self.dao buscaContatoDaPosicao:indexPath.row];
-    UITableViewCell *cell = [[UITableViewCell alloc]
-                             initWithStyle:UITableViewCellStyleDefault reuseIdentifier:nil];
     cell.textLabel.text = contato.nome;
     return cell;
+}
+
+- (void) viewWillAppear:(BOOL)animated {
+    [self.tableView reloadData];
+}
+
+- (void) tableView:(UITableView *)tableView
+    commitEditingStyle:(UITableViewCellEditingStyle)editingStyle
+    forRowAtIndexPath:(NSIndexPath *)indexPath {
+    if (editingStyle == UITableViewCellEditingStyleDelete) {
+        [self.dao removeContatoDaPosicao:indexPath.row];
+        [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
+    }
 }
 
 @end

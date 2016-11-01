@@ -25,6 +25,10 @@ static ContatoDao *defaultDao = nil;
     NSLog(@"Contatos: %@", self.contatos);
 }
 
+- (void) removeContatoDaPosicao:(NSInteger)posicao {
+    [self.contatos removeObjectAtIndex:posicao];
+}
+
 + (id) contatoDaoInstance {
     if(!defaultDao) {
         defaultDao = [ContatoDao new];
