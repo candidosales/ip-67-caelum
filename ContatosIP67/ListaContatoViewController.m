@@ -42,6 +42,27 @@
     
 }
 
+- (void) viewDidLoad {
+    [super viewDidLoad];
+    
+    UILongPressGestureRecognizer *longPress = [[UILongPressGestureRecognizer alloc]
+                                               initWithTarget:self
+                                               action:@selector(exibeMaisAcoes:)];
+    [self.tableView addGestureRecognizer:longPress];
+}
+
+- (void) exibeMaisAcoes:(UIGestureRecognizer *)gesture {
+    if (gesture.state == UIGestureRecognizerStateBegan) {
+        CGPoint ponto = [gesture locationInView:self.tableView];
+        NSIndexPath *index = [self.tableView indexPathForRowAtPoint:ponto];
+        
+        self.contatoSelecionado = [self.dao buscaContatoDaPosicao:index.row];
+        _gerenciador = [[GerenciadorDeAcoes alloc] initWithContato:self.contatoSelecionado];
+        
+        [self.gerenciador acoesDoController:self];
+    }
+}
+
 - (void) exibeFormulario {
     UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
     FormularioContatoViewController *form = [storyboard instantiateViewControllerWithIdentifier:@"Form-Contato"];
