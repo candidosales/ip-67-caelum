@@ -10,6 +10,14 @@
 #import "Contato.h"
 #import "ContatoDao.h"
 
+@protocol FormularioContatoViewControllerDelegate <NSObject>
+
+- (void)contatoAtualizado:(Contato *) contato;
+- (void)contatoAdicionado:(Contato *) contato;
+
+@end
+
+
 @interface FormularioContatoViewController : UIViewController
 
 @property (weak) IBOutlet UITextField *nome;
@@ -20,6 +28,9 @@
 
 @property (strong) ContatoDao *dao;
 @property (strong) Contato *contato;
+
+@property (weak) id<FormularioContatoViewControllerDelegate> delegate;
+@property NSInteger linhaDestaque;
 
 - (IBAction) pegaDadosDoFormulario;
 

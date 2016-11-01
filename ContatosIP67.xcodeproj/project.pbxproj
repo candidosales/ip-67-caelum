@@ -518,6 +518,7 @@
 				319C1FC81DC767CF0013B5D4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		319C1FC91DC767CF0013B5D4 /* Build configuration list for PBXNativeTarget "ContatosIP67Tests" */ = {
 			isa = XCConfigurationList;
@@ -526,6 +527,7 @@
 				319C1FCB1DC767CF0013B5D4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		319C1FCC1DC767CF0013B5D4 /* Build configuration list for PBXNativeTarget "ContatosIP67UITests" */ = {
 			isa = XCConfigurationList;
@@ -534,6 +536,7 @@
 				319C1FCE1DC767CF0013B5D4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
