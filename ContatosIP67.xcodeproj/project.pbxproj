@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		313E88641DC8E7AB0084CA0D /* GerenciadorDeAcoes.m in Sources */ = {isa = PBXBuildFile; fileRef = 313E88631DC8E7AB0084CA0D /* GerenciadorDeAcoes.m */; };
+		313E88681DC919820084CA0D /* ContatosNoMapaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 313E88661DC919820084CA0D /* ContatosNoMapaViewController.m */; };
+		313E88691DC919820084CA0D /* ContatosNoMapaViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 313E88671DC919820084CA0D /* ContatosNoMapaViewController.xib */; };
+		313E886C1DC91CAD0084CA0D /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 313E886B1DC91CAD0084CA0D /* MapKit.framework */; };
 		319C1F9B1DC767CF0013B5D4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 319C1F9A1DC767CF0013B5D4 /* main.m */; };
 		319C1F9E1DC767CF0013B5D4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 319C1F9D1DC767CF0013B5D4 /* AppDelegate.m */; };
 		319C1FA11DC767CF0013B5D4 /* FormularioContatoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 319C1FA01DC767CF0013B5D4 /* FormularioContatoViewController.m */; };
@@ -42,6 +45,10 @@
 /* Begin PBXFileReference section */
 		313E88621DC8E7AB0084CA0D /* GerenciadorDeAcoes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GerenciadorDeAcoes.h; sourceTree = "<group>"; };
 		313E88631DC8E7AB0084CA0D /* GerenciadorDeAcoes.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GerenciadorDeAcoes.m; sourceTree = "<group>"; };
+		313E88651DC919820084CA0D /* ContatosNoMapaViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContatosNoMapaViewController.h; sourceTree = "<group>"; };
+		313E88661DC919820084CA0D /* ContatosNoMapaViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContatosNoMapaViewController.m; sourceTree = "<group>"; };
+		313E88671DC919820084CA0D /* ContatosNoMapaViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ContatosNoMapaViewController.xib; sourceTree = "<group>"; };
+		313E886B1DC91CAD0084CA0D /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		319C1F961DC767CF0013B5D4 /* ContatosIP67.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ContatosIP67.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		319C1F9A1DC767CF0013B5D4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		319C1F9C1DC767CF0013B5D4 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -72,6 +79,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				313E886C1DC91CAD0084CA0D /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -92,6 +100,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		313E886A1DC91CAC0084CA0D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				313E886B1DC91CAD0084CA0D /* MapKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		319C1F8D1DC767CF0013B5D4 = {
 			isa = PBXGroup;
 			children = (
@@ -99,6 +115,7 @@
 				319C1FB51DC767CF0013B5D4 /* ContatosIP67Tests */,
 				319C1FC01DC767CF0013B5D4 /* ContatosIP67UITests */,
 				319C1F971DC767CF0013B5D4 /* Products */,
+				313E886A1DC91CAC0084CA0D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -127,6 +144,9 @@
 				319C1FD31DC7A4280013B5D4 /* ContatoDao.m */,
 				319C1FCF1DC7839E0013B5D4 /* Contato.h */,
 				319C1FD01DC7839E0013B5D4 /* Contato.m */,
+				313E88651DC919820084CA0D /* ContatosNoMapaViewController.h */,
+				313E88661DC919820084CA0D /* ContatosNoMapaViewController.m */,
+				313E88671DC919820084CA0D /* ContatosNoMapaViewController.xib */,
 				319C1FA21DC767CF0013B5D4 /* Main.storyboard */,
 				319C1FA81DC767CF0013B5D4 /* Assets.xcassets */,
 				319C1FAA1DC767CF0013B5D4 /* LaunchScreen.storyboard */,
@@ -268,6 +288,7 @@
 			files = (
 				319C1FAC1DC767CF0013B5D4 /* LaunchScreen.storyboard in Resources */,
 				319C1FA91DC767CF0013B5D4 /* Assets.xcassets in Resources */,
+				313E88691DC919820084CA0D /* ContatosNoMapaViewController.xib in Resources */,
 				319C1FA41DC767CF0013B5D4 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -300,6 +321,7 @@
 				319C1FA71DC767CF0013B5D4 /* ContatosIP67.xcdatamodeld in Sources */,
 				319C1FD71DC7AF290013B5D4 /* ListaContatoViewController.m in Sources */,
 				313E88641DC8E7AB0084CA0D /* GerenciadorDeAcoes.m in Sources */,
+				313E88681DC919820084CA0D /* ContatosNoMapaViewController.m in Sources */,
 				319C1F9B1DC767CF0013B5D4 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

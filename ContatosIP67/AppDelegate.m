@@ -8,6 +8,7 @@
 
 #import "AppDelegate.h"
 #import "ListaContatoViewController.h"
+#import "ContatosNoMapaViewController.h"
 
 @interface AppDelegate ()
 
@@ -26,7 +27,12 @@
     
     UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:lista];
     
-    self.window.rootViewController = nav;
+    ContatosNoMapaViewController *contatosMapa = [ContatosNoMapaViewController new];
+    
+    UITabBarController *tabBarController = [UITabBarController new];
+    tabBarController.viewControllers = @[nav, contatosMapa];
+    
+    self.window.rootViewController = tabBarController;
     
     [self.window makeKeyAndVisible];
     return YES;
