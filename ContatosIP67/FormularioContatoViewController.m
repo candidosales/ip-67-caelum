@@ -42,6 +42,12 @@
         self.email.text = self.contato.email;
         self.endereco.text = self.contato.endereco;
         self.site.text = self.contato.site;
+        
+        if (self.contato.foto) {
+            [self.botaoFoto setBackgroundImage:self.contato.foto
+                                      forState:UIControlStateNormal];
+            [self.botaoFoto setTitle:nil forState:UIControlStateNormal];
+        }
     }
 }
 
@@ -65,6 +71,11 @@
     if (!self.contato) {
         self.contato = [Contato new];
     }
+    
+    if ([self.botaoFoto backgroundImageForState:UIControlStateNormal]) {
+        self.contato.foto = [self.botaoFoto backgroundImageForState:UIControlStateNormal];
+    }
+    
     self.contato.nome = self.nome.text;
     self.contato.telefone = self.telefone.text;
     self.contato.email = self.email.text;
@@ -81,6 +92,52 @@
     }
     
     [self.navigationController popViewControllerAnimated:YES];
+}
+
+- (IBAction)selecionaFoto:(id)sender {
+    if([UIImagePickerController isSourceTypeAvailable:UIImagePickerControllerSourceTypeCamera]) {
+        UIActionSheet *sheet = [[UIActionSheet alloc]
+                                initWithTitle:@"Escolha a foto do contato"
+                                delegate:self
+                                cancelButtonTitle:@"Cancelar"
+                                destructiveButtonTitle:nil
+                                otherButtonTitles:@"Tirar foto", @"Escolher da biblioteca", nil];
+        [sheet showInView:self.view];
+        
+    } else {
+        UIImagePickerController *picker = [UIImagePickerController new];
+        picker.sourceType = UIImagePickerControllerSourceTypePhotoLibrary;
+        picker.allowsEditing = YES;
+        picker.delegate = self;
+        [self presentViewController:picker animated:YES completion:nil];
+    }
+}
+
+- (void) imagePickerController:(UIImagePickerController *)picker
+ didFinishPickingMediaWithInfo:(NSDictionary *)info {
+    UIImage *imagemSelecionada = [info valueForKey:UIImagePickerControllerEditedImage];
+    
+    [self.botaoFoto setBackgroundImage:imagemSelecionada forState:UIControlStateNormal];
+    [self.botaoFoto setTitle:nil forState:UIControlStateNormal];
+    [picker dismissViewControllerAnimated:YES completion:nil];
+}
+
+- (void) actionSheet:(UIActionSheet *)actionSheet didDismissWithButtonIndex:(NSInteger)buttonIndex {
+    UIImagePickerController *picker = [UIImagePickerController new];
+    picker.delegate = self;
+    picker.allowsEditing = YES;
+    
+    switch (buttonIndex) {
+        case 0:
+            picker.sourceType = UIImagePickerControllerSourceTypeCamera;
+            break;
+        case 1:
+            picker.sourceType = UIImagePickerControllerSourceTypePhotoLibrary;
+            break;
+        default:
+            break;
+    }
+    [self presentViewController:picker animated:YES completion:nil];
 }
 
 @end
