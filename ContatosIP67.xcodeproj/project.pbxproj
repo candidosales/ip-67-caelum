@@ -72,6 +72,7 @@
 		319C1FD31DC7A4280013B5D4 /* ContatoDao.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContatoDao.m; sourceTree = "<group>"; };
 		319C1FD51DC7AF290013B5D4 /* ListaContatoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ListaContatoViewController.h; sourceTree = "<group>"; };
 		319C1FD61DC7AF290013B5D4 /* ListaContatoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ListaContatoViewController.m; sourceTree = "<group>"; };
+		31C9B2641DCA0AF000D44865 /* Vila Mariana.gpx */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "Vila Mariana.gpx"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -153,6 +154,7 @@
 				319C1FAD1DC767CF0013B5D4 /* Info.plist */,
 				319C1FA51DC767CF0013B5D4 /* ContatosIP67.xcdatamodeld */,
 				319C1F991DC767CF0013B5D4 /* Supporting Files */,
+				31C9B2641DCA0AF000D44865 /* Vila Mariana.gpx */,
 			);
 			path = ContatosIP67;
 			sourceTree = "<group>";

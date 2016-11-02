@@ -14,9 +14,24 @@
 
 @implementation ContatosNoMapaViewController
 
+
+- (id) init {
+    self = [ super init ];
+    if (self) {
+        UIImage *imagemTabItem = [UIImage imageNamed:@"mapa-contatos.png"];
+        UITabBarItem *tabItem = [[UITabBarItem alloc] initWithTitle:@"Mapa" image:imagemTabItem tag:0];
+        
+        self.tabBarItem = tabItem;
+        self.navigationItem.title = @"Localizacao";
+    }
+    return self;
+}
+
 - (void)viewDidLoad {
-    [super viewDidLoad];
-    // Do any additional setup after loading the view from its nib.
+    MKUserTrackingBarButtonItem *botaoLocalizacao = [[MKUserTrackingBarButtonItem alloc] initWithMapView:self.mapa];
+    self.navigationItem.rightBarButtonItem = botaoLocalizacao;
+    self.manager = [CLLocationManager new];
+    [self.manager requestWhenInUseAuthorization];
 }
 
 - (void)didReceiveMemoryWarning {
