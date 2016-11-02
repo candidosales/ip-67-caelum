@@ -40,7 +40,6 @@
 @property NSInteger linhaDestaque;
 
 @property (weak) IBOutlet UIButton *botaoFoto;
-@property (weak) IBOutlet UIButton *botaoLocalizacao;
 
 - (IBAction) pegaDadosDoFormulario;
 - (IBAction) selecionaFoto:(id)sender;

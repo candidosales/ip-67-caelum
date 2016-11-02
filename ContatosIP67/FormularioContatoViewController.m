@@ -147,9 +147,9 @@
     [self presentViewController:picker animated:YES completion:nil];
 }
 
-- (IBAction)buscarCoordenadas:(id)sender {
+- (IBAction)buscarCoordenadas:(UIButton *)botao {
     [self.loading startAnimating];
-    self.botaoLocalizacao.hidden = YES;
+    botao.hidden = YES;
     
     CLGeocoder *geocoder = [CLGeocoder new];
     
@@ -165,7 +165,7 @@
             NSLog(@"Erro: @% Resultados: %@", error, resultados);
         }
         [self.loading stopAnimating];
-        self.botaoLocalizacao.hidden = NO;
+        botao.hidden = NO;
                  }];
 }
 

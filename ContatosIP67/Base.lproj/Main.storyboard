@@ -136,7 +136,6 @@
                     </view>
                     <connections>
                         <outlet property="botaoFoto" destination="1aw-Hn-30G" id="3ck-ts-7cM"/>
-                        <outlet property="botaoLocalizacao" destination="elb-xK-Nqs" id="4Lh-1Z-eFe"/>
                         <outlet property="email" destination="EaQ-YS-WXL" id="lUt-tG-bjW"/>
                         <outlet property="endereco" destination="5WV-l6-iTW" id="aun-Z4-n2l"/>
                         <outlet property="latitude" destination="bvC-cW-GtK" id="KW5-2W-fDJ"/>

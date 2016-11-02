@@ -24,6 +24,8 @@ static ContatoDao *defaultDao = nil;
 
 - (void) adicionaContato:(Contato *)contato {
     [self.contatos addObject:contato];
+    [self saveContext];
+    
     NSLog(@"Contatos: %@", self.contatos);
 }
 
