@@ -8,10 +8,15 @@
 
 #import <UIKit/UIKit.h>
 #import <MapKit/MapKit.h>
+#import "ContatoDao.h"
 
-@interface ContatosNoMapaViewController : UIViewController
+@interface ContatosNoMapaViewController : UIViewController<MKMapViewDelegate>
 
-@property (weak, nonatomic) IBOutlet MKMapView *mapa;
+@property (nonatomic, weak) IBOutlet MKMapView *mapa;
+@property (nonatomic, weak) NSMutableArray *contatos;
+
 @property CLLocationManager *manager;
+
+@property (strong) ContatoDao *dao;
 
 @end

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>SchemeUserState</key>
+	<dict>
+		<key>Pods-ContatosIP67.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-ContatosIP67Tests.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-ContatosIP67UITests.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>TPKeyboardAvoiding.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>2EF436F7C7CF7A96D9D13343C3B629A8</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>642EC6C7D65D49DE131736517BDA0C23</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>7DD2B35CF08D0ED139B70E87FD776CA3</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>C3D5174BE3857DCD40E80F09D1DAF48A</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+	</dict>
+</dict>
+</plist>

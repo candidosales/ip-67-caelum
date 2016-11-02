@@ -43,6 +43,9 @@
         self.endereco.text = self.contato.endereco;
         self.site.text = self.contato.site;
         
+        self.latitude.text = [self.contato.latitude stringValue];
+        self.longitude.text = [self.contato.longitude stringValue];
+        
         if (self.contato.foto) {
             [self.botaoFoto setBackgroundImage:self.contato.foto
                                       forState:UIControlStateNormal];
@@ -81,6 +84,10 @@
     self.contato.email = self.email.text;
     self.contato.endereco = self.endereco.text;
     self.contato.site = self.site.text;
+    
+    self.contato.latitude = [NSNumber numberWithFloat:[self.latitude.text floatValue]];
+    self.contato.longitude = [NSNumber numberWithFloat:[self.longitude.text floatValue]];
+    
     NSLog(@"Dados: %@", self.contato);
 }
 
@@ -138,6 +145,28 @@
             break;
     }
     [self presentViewController:picker animated:YES completion:nil];
+}
+
+- (IBAction)buscarCoordenadas:(id)sender {
+    [self.loading startAnimating];
+    self.botaoLocalizacao.hidden = YES;
+    
+    CLGeocoder *geocoder = [CLGeocoder new];
+    
+    [geocoder geocodeAddressString:self.endereco.text
+                 completionHandler: ^(NSArray *resultados, NSError *error){
+        if (error == nil && [resultados count] > 0) {
+            CLPlacemark *resultado = resultados[0];
+            CLLocationCoordinate2D coordenada = resultado.location.coordinate;
+            self.latitude.text = [NSString stringWithFormat:@"%f", coordenada.latitude];
+            self.longitude.text = [NSString stringWithFormat:@"%f", coordenada.longitude];
+
+        } else {
+            NSLog(@"Erro: @% Resultados: %@", error, resultados);
+        }
+        [self.loading stopAnimating];
+        self.botaoLocalizacao.hidden = NO;
+                 }];
 }
 
 @end

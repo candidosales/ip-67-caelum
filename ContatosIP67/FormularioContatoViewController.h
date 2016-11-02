@@ -9,11 +9,13 @@
 #import <UIKit/UIKit.h>
 #import "Contato.h"
 #import "ContatoDao.h"
+#import <CoreLocation/CoreLocation.h>
 
 @protocol FormularioContatoViewControllerDelegate <NSObject>
 
 - (void)contatoAtualizado:(Contato *) contato;
 - (void)contatoAdicionado:(Contato *) contato;
+// void (^CLGeocodeCompletionHandler) (NSArray *resultados, NSError *error);
 
 @end
 
@@ -26,6 +28,11 @@
 @property (weak) IBOutlet UITextField *endereco;
 @property (weak) IBOutlet UITextField *site;
 
+@property (weak) IBOutlet UITextField *latitude;
+@property (weak) IBOutlet UITextField *longitude;
+
+@property (nonatomic, weak) IBOutlet UIActivityIndicatorView *loading;
+
 @property (strong) ContatoDao *dao;
 @property (strong) Contato *contato;
 
@@ -33,9 +40,12 @@
 @property NSInteger linhaDestaque;
 
 @property (weak) IBOutlet UIButton *botaoFoto;
+@property (weak) IBOutlet UIButton *botaoLocalizacao;
 
 - (IBAction) pegaDadosDoFormulario;
 - (IBAction) selecionaFoto:(id)sender;
+- (IBAction) buscarCoordenadas:(id)sender;
+
 
 @end
 
