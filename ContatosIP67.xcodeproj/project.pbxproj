@@ -12,6 +12,7 @@
 		313E88691DC919820084CA0D /* ContatosNoMapaViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 313E88671DC919820084CA0D /* ContatosNoMapaViewController.xib */; };
 		313E886C1DC91CAD0084CA0D /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 313E886B1DC91CAD0084CA0D /* MapKit.framework */; };
 		318701DA1DCA2CCD002E46E9 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 318701D91DCA2CCD002E46E9 /* CoreLocation.framework */; };
+		318D976C1DCCFE04008AF1FC /* CoreDataInfra.m in Sources */ = {isa = PBXBuildFile; fileRef = 318D976B1DCCFE04008AF1FC /* CoreDataInfra.m */; };
 		319C1F9B1DC767CF0013B5D4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 319C1F9A1DC767CF0013B5D4 /* main.m */; };
 		319C1F9E1DC767CF0013B5D4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 319C1F9D1DC767CF0013B5D4 /* AppDelegate.m */; };
 		319C1FA11DC767CF0013B5D4 /* FormularioContatoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 319C1FA01DC767CF0013B5D4 /* FormularioContatoViewController.m */; };
@@ -55,6 +56,8 @@
 		313E88671DC919820084CA0D /* ContatosNoMapaViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ContatosNoMapaViewController.xib; sourceTree = "<group>"; };
 		313E886B1DC91CAD0084CA0D /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		318701D91DCA2CCD002E46E9 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		318D976A1DCCFE04008AF1FC /* CoreDataInfra.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreDataInfra.h; sourceTree = "<group>"; };
+		318D976B1DCCFE04008AF1FC /* CoreDataInfra.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoreDataInfra.m; sourceTree = "<group>"; };
 		319C1F961DC767CF0013B5D4 /* ContatosIP67.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ContatosIP67.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		319C1F9A1DC767CF0013B5D4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		319C1F9C1DC767CF0013B5D4 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -183,6 +186,8 @@
 				319C1FD01DC7839E0013B5D4 /* Contato.m */,
 				313E88651DC919820084CA0D /* ContatosNoMapaViewController.h */,
 				313E88661DC919820084CA0D /* ContatosNoMapaViewController.m */,
+				318D976A1DCCFE04008AF1FC /* CoreDataInfra.h */,
+				318D976B1DCCFE04008AF1FC /* CoreDataInfra.m */,
 				313E88671DC919820084CA0D /* ContatosNoMapaViewController.xib */,
 				319C1FA21DC767CF0013B5D4 /* Main.storyboard */,
 				319C1FAA1DC767CF0013B5D4 /* LaunchScreen.storyboard */,
@@ -506,6 +511,7 @@
 				319C1FA71DC767CF0013B5D4 /* ContatosIP67.xcdatamodeld in Sources */,
 				319C1FD71DC7AF290013B5D4 /* ListaContatoViewController.m in Sources */,
 				313E88641DC8E7AB0084CA0D /* GerenciadorDeAcoes.m in Sources */,
+				318D976C1DCCFE04008AF1FC /* CoreDataInfra.m in Sources */,
 				313E88681DC919820084CA0D /* ContatosNoMapaViewController.m in Sources */,
 				319C1F9B1DC767CF0013B5D4 /* main.m in Sources */,
 			);
